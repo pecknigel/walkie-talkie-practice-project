@@ -19,7 +19,8 @@ However, looking over them can be a good way to learn, so perhaps start there.
 
 ## How it Looks
 
-This is how it looks before you get started.  
+This is how it looks before you get started.
+
 ![Example Image](https://github.com/user-attachments/assets/bdc9b064-31b6-4c57-a336-630ca0fe1ec3)
 
 ## How it Works
