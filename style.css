@@ -1,0 +1,158 @@
+
+body {
+    border: 20px solid #850909;
+    width:100vw;
+    height: 100vh;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    background: #43b643;
+}
+
+.person {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 600px;
+    width: 300px;
+    border-width: 0;
+    border-bottom-width: 20px;
+    border-top-width: 20px;
+    border-color: #cd5a1b;
+    border-style: solid;
+    background: #adbfcf;
+}
+
+#personLeft {
+    left: 0;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-right-width: 20px;
+}
+
+#personRight {
+    right: 0;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-left-width: 20px;
+}
+
+.line-status {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 240px;
+    height: 50px;
+    background: #4d7ea6;
+    border-radius: 5px;
+    display: flex;
+}
+
+.line-status div {
+    width: 50%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.line-status .line-status-busy {
+    color: #c0c0c0;
+}
+
+.line-status .line-status-talk {
+    color: #c0c0c0;
+}
+
+.line-status .line-status-open {
+    color: #c0c0c0;
+}
+
+.line-status.busy .line-status-busy {
+    background: red;
+    color: #5c0707;
+}
+
+.line-status.talk .line-status-talk {
+    background: #ff9b19;
+    color: #553506;
+}
+
+.line-status.open .line-status-open {
+    background: green;
+    color: #033303;
+}
+
+.messages {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 240px;
+    height: 420px;
+    box-sizing: border-box;
+    padding: 3px;
+    background: white;
+    border: 20px solid #4d7ea6;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.messages p {
+    padding: 0;
+    margin: 0 0 10px;
+}
+
+.messages p:last-child {
+    margin-bottom: 0;
+}
+
+.input-container {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 240px;
+}
+
+.input-container input {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#communicationConcept {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200px;
+    font-weight: 900;
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+}
+
+#communicationConcept div {
+    display: none;
+}
+#communicationConcept.right .right {
+    display: block;
+}
+#communicationConcept.left .left {
+    display: block;
+}
+#communicationConcept.neutral .neutral {
+    display: block;
+}
